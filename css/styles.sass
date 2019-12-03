@@ -24,6 +24,8 @@
   font-weight: normal
 //vars
 $blue: #00aae7
+$margin-left: 78px
+$margin-right: 58px
 *
   box-sizing: border-box
 html
@@ -96,8 +98,8 @@ body
   display: flex
 .card-row
   position: relative
-  margin-left: 78px
-  margin-right: 58px
+  margin-left: $margin-left
+  margin-right: $margin-right
   display: flex
 .content
   margin-right: 34px
@@ -138,8 +140,9 @@ body
   b
     font-weight: normal
 h1
+  margin-left: $margin-left
   line-height: 22px
-  margin-bottom: 40px
+  margin-bottom: 30px
   margin-top: 0
   font-weight: bold
   font-size: 35px
@@ -168,3 +171,48 @@ a
   text-decoration: none
   color: white
   font-family: 'MyriadSemiBold', sans-serif
+@media (max-width: 666px)
+  #card
+    padding-bottom: 180px
+  #pop-up
+    width: calc(100% + 30px)
+    left: -15px
+    bottom: 0
+    h3
+      font-size: 20px
+    .wrapper
+      margin-left: 0
+    .row
+      flex-direction: column
+      align-items: center
+      margin: 15px
+      img
+        width: 60px
+        margin-bottom: 15px
+  #sidebar
+    display: flex
+    justify-content: space-around
+    margin-top: 30px
+    .danger
+      margin-top: 0
+  #logod
+    justify-content: center
+    .elektrilevi
+      margin-right: 20px
+  .lang
+    top: 20px
+    right: 20px
+  .triangle
+    padding-top: 40px
+    padding-bottom: 30px
+  .content
+    margin-right: 0
+  h1
+    font-size: 24px
+    margin-left: 20px
+  h2
+    margin: 20px 0 20px 0
+  .card-row
+    flex-direction: column
+    margin-left: 20px
+    margin-right: 20px
