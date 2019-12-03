@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Myriad";
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: "Myriad";
+  src: url(../fonts/MYRIADPRO-BOLD.OTF) format("opentype");
+  font-weight: bold; }
+@font-face {
+  font-family: "MyriadSemiBold";
+  src: url(../fonts/MYRIADPRO-SEMIBOLD.OTF) format("opentype"); }
+@font-face {
+  font-family: "Milibus";
+  src: url(../fonts/Milibus-Bold.ttf) format("truetype");
+  font-weight: bold; }
+@font-face {
+  font-family: "Milibus";
+  src: url(../fonts/Milibus-Light.ttf) format("truetype");
+  font-weight: 100; }
+@font-face {
+  font-family: "Milibus";
+  src: url(../fonts/Milibus-SemiBold.ttf) format("truetype");
+  font-weight: normal; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Milibus";
+  color: white;
+  background-image: url(../assets/taust.svg);
+  background-position: -40px -70px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body:lang(ru) {
+    font-family: "Myriad"; }
+
+#pop-up {
+  display: none;
+  width: calc(100% + 24px);
+  left: -24px;
+  bottom: 75px;
+  position: absolute;
+  background: white;
+  color: #323232; }
+  #pop-up ul {
+    padding-left: 30px;
+    line-height: 22px;
+    font-weight: lighter;
+    margin: 0; }
+    #pop-up ul li:first-of-type, #pop-up ul li:nth-of-type(2) {
+      margin-bottom: 8px; }
+  #pop-up .wrapper {
+    margin-left: 26px; }
+  #pop-up strong {
+    color: #00aae7;
+    font-size: 21px;
+    line-height: 22px; }
+  #pop-up .close {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-top: 16px;
+    margin-right: 16px; }
+  #pop-up .row {
+    margin: 60px 50px 60px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #pop-up .row:lang(ru) {
+      margin: 25px; }
+  #pop-up h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #00aae7;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+#card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  margin: 80px auto;
+  padding-bottom: 280px;
+  background: #00aae7; }
+
+.triangle {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.card-row {
+  position: relative;
+  margin-left: 78px;
+  margin-right: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content {
+  margin-right: 34px; }
+
+.apps {
+  margin-top: 25px; }
+  .apps .google {
+    margin-right: 12px; }
+
+#logod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #logod .elektrilevi {
+    margin-right: 50px; }
+
+#sidebar {
+  margin-top: 70px; }
+  #sidebar:lang(ru) b {
+    font-weight: bold; }
+  #sidebar:lang(ru) p {
+    line-height: 16px;
+    margin-bottom: 0; }
+  #sidebar:lang(ru) .kuusk, #sidebar:lang(ru) .danger {
+    padding: 10px 14px; }
+  #sidebar .kuusk, #sidebar .danger {
+    padding: 30px 20px;
+    width: 170px;
+    height: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #sidebar .kuusk {
+    border: 1px solid white; }
+  #sidebar .danger {
+    cursor: pointer;
+    margin-top: 35px;
+    background: white;
+    color: #00aae7; }
+  #sidebar b {
+    font-weight: normal; }
+
+h1 {
+  line-height: 22px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase; }
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: calc(100% + 16px);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px; }
+  h2:lang(ru) {
+    font-family: "MyriadSemiBold"; }
+
+p {
+  margin: 10px 0;
+  font-weight: 100;
+  line-height: 21px; }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
+
+.lang {
+  top: 32px;
+  right: 32px;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-family: "MyriadSemiBold", sans-serif; }
+
+/*# sourceMappingURL=styles.css.map */

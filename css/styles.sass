@@ -1,0 +1,170 @@
+//fonts
+@font-face
+  font-family: 'Myriad'
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF) format('opentype')
+  font-weight: normal
+@font-face
+  font-family: 'Myriad'
+  src: url(../fonts/MYRIADPRO-BOLD.OTF) format('opentype')
+  font-weight: bold
+@font-face
+  font-family: 'MyriadSemiBold'
+  src: url(../fonts/MYRIADPRO-SEMIBOLD.OTF) format('opentype')
+@font-face
+  font-family: 'Milibus'
+  src: url(../fonts/Milibus-Bold.ttf) format('truetype')
+  font-weight: bold
+@font-face
+  font-family: 'Milibus'
+  src: url(../fonts/Milibus-Light.ttf) format('truetype')
+  font-weight: 100
+@font-face
+  font-family: 'Milibus'
+  src: url(../fonts/Milibus-SemiBold.ttf) format('truetype')
+  font-weight: normal
+//vars
+$blue: #00aae7
+*
+  box-sizing: border-box
+html
+  margin: 0
+  padding: 0
+  height: 100%
+body
+  margin: 0
+  font-family: 'Milibus'
+  &:lang(ru)
+    font-family: 'Myriad'
+  color: white
+  background-image: url(../assets/taust.svg)
+  background-position: -40px -70px
+  background-repeat: no-repeat
+  background-size: cover
+#pop-up
+  display: none
+  width: calc(100% + 24px)
+  left: -24px
+  bottom: 75px
+  position: absolute
+  background: white
+  color: #323232
+  ul
+    padding-left: 30px
+    line-height: 22px
+    font-weight: lighter
+    margin: 0
+    & li:first-of-type,
+    & li:nth-of-type(2)
+      margin-bottom: 8px
+  .wrapper
+    margin-left: 26px
+  strong
+    color: $blue
+    font-size: 21px
+    line-height: 22px
+  .close
+    cursor: pointer
+    display: block
+    float: right
+    margin-top: 16px
+    margin-right: 16px
+  .row
+    margin: 60px 50px 60px 50px
+    display: flex
+    &:lang(ru)
+      margin: 25px
+  h3
+    margin-top: 0
+    margin-bottom: 10px
+    color: $blue
+    font-size: 23px
+    line-height: 29px
+    font-weight: bold
+    text-transform: uppercase
+#card
+  position: relative
+  display: flex
+  flex-direction: column
+  max-width: 800px
+  margin: 80px auto
+  padding-bottom: 280px
+  background: $blue
+.triangle
+  padding-top: 80px
+  padding-bottom: 70px
+  margin: 0 auto
+  display: flex
+.card-row
+  position: relative
+  margin-left: 78px
+  margin-right: 58px
+  display: flex
+.content
+  margin-right: 34px
+.apps
+  margin-top: 25px
+  .google
+    margin-right: 12px
+#logod
+  display: flex
+  align-items: center
+  .elektrilevi
+    margin-right: 50px
+#sidebar
+  margin-top: 70px
+  &:lang(ru)
+    b
+      font-weight: bold
+    p
+      line-height: 16px
+      margin-bottom: 0
+    .kuusk, .danger
+      padding: 10px 14px
+  .kuusk, .danger
+    padding: 30px 20px
+    width: 170px
+    height: 170px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .kuusk
+    border: 1px solid white
+  .danger
+    cursor: pointer
+    margin-top: 35px
+    background: white
+    color: $blue
+  b
+    font-weight: normal
+h1
+  line-height: 22px
+  margin-bottom: 40px
+  margin-top: 0
+  font-weight: bold
+  font-size: 35px
+  text-transform: uppercase
+h2
+  margin-top: 25px
+  margin-bottom: 50px
+  width: calc(100% + 16px)
+  font-weight: normal
+  font-size: 20px
+  line-height: 24px
+  &:lang(ru)
+    font-family: 'MyriadSemiBold'
+p
+  margin: 10px 0
+  font-weight: 100
+  line-height: 21px
+a
+  color: white
+  text-decoration: none
+  font-weight: bold
+.lang
+  top: 32px
+  right: 32px
+  position: absolute
+  text-decoration: none
+  color: white
+  font-family: 'MyriadSemiBold', sans-serif
