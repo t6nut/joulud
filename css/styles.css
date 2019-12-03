@@ -221,6 +221,8 @@ a {
     width: calc(100% + 30px);
     left: -15px;
     bottom: 0; }
+    #pop-up ul {
+      padding-left: 20px; }
     #pop-up h3 {
       font-size: 20px; }
     #pop-up .wrapper {
@@ -233,7 +235,7 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 15px; }
+      margin: 15px !important; }
       #pop-up .row img {
         width: 60px;
         margin-bottom: 15px; }
