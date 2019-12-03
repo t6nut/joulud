@@ -99,6 +99,7 @@ body {
   background: #00aae7; }
 
 .triangle {
+  max-width: 80px;
   padding-top: 80px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -142,7 +143,7 @@ body {
   #sidebar:lang(ru) .kuusk, #sidebar:lang(ru) .danger {
     padding: 10px 14px; }
   #sidebar .kuusk, #sidebar .danger {
-    padding: 30px 20px;
+    padding: 20px 10px;
     width: 170px;
     height: 170px;
     display: -webkit-box;
@@ -260,7 +261,8 @@ a {
 
   h1 {
     font-size: 24px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-bottom: 10px; }
 
   h2 {
     margin: 20px 0 20px 0; }
