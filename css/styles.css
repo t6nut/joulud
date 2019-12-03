@@ -37,7 +37,9 @@ body {
   background-image: url(../assets/taust.svg);
   background-position: -40px -70px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
   body:lang(ru) {
     font-family: "Myriad", Verdana, Helvetica, Arial, sans-serif; }
 
