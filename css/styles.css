@@ -32,14 +32,14 @@ html {
 
 body {
   margin: 0;
-  font-family: "Milibus";
+  font-family: "Milibus", Verdana, Helvetica, Arial, sans-serif;
   color: white;
   background-image: url(../assets/taust.svg);
   background-position: -40px -70px;
   background-repeat: no-repeat;
   background-size: cover; }
   body:lang(ru) {
-    font-family: "Myriad"; }
+    font-family: "Myriad", Verdana, Helvetica, Arial, sans-serif; }
 
 #pop-up {
   display: none;
@@ -99,6 +99,7 @@ body {
   background: #00aae7; }
 
 .triangle {
+  width: 100%;
   max-width: 80px;
   padding-top: 80px;
   padding-bottom: 70px;
@@ -149,6 +150,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -186,7 +190,7 @@ h2 {
   font-size: 20px;
   line-height: 24px; }
   h2:lang(ru) {
-    font-family: "MyriadSemiBold"; }
+    font-family: "MyriadSemiBold", Verdana, Helvetica, Arial, sans-serif; }
 
 p {
   margin: 10px 0;
@@ -204,7 +208,7 @@ a {
   position: absolute;
   text-decoration: none;
   color: white;
-  font-family: "MyriadSemiBold", sans-serif; }
+  font-family: "MyriadSemiBold", Verdana, Helvetica, Arial, sans-serif; }
 
 @media (max-width: 666px) {
   #card {
